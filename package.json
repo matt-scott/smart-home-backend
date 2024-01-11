@@ -1,11 +1,15 @@
 {
-  "name": "sh-server-docker",
+  "name": "backend-docker",
   "version": "0.0.1",
   "description": "Node version - 21.5.0",
-  "main": "index.js",
+  "main": "./mqttjs/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Matt Scott",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^5.3.4"
+  }
 }
