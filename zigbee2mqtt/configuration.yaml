@@ -1,0 +1,48 @@
+homeassistant: false
+frontend: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://172.17.0.1
+serial:
+  port: /dev/ttyACM0
+# permit_join: true
+advanced:
+  network_key:
+    - 194
+    - 190
+    - 142
+    - 196
+    - 39
+    - 16
+    - 31
+    - 22
+    - 58
+    - 219
+    - 39
+    - 53
+    - 220
+    - 9
+    - 110
+    - 85
+  pan_id: 34742
+  ext_pan_id:
+    - 131
+    - 9
+    - 72
+    - 235
+    - 198
+    - 137
+    - 94
+    - 102
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
+devices:
+  '0x00158d0009f5625a':
+    friendly_name: dining/temperature
+  '0x00158d00087b562c':
+    friendly_name: bedrooom/temperature
+  '0x00158d00087b5647':
+    friendly_name: family/temperature

@@ -1,0 +1,20 @@
+info  2024-01-11 14:43:50: Logging to console and directory: '/app/data/log/2024-01-11.14-43-50' filename: log.txt
+info  2024-01-11 14:43:50: Starting Zigbee2MQTT version 1.35.1 (commit #9eaaa0f)
+info  2024-01-11 14:43:50: Starting zigbee-herdsman (0.30.0)
+info  2024-01-11 14:43:55: zigbee-herdsman started (resumed)
+info  2024-01-11 14:43:55: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+info  2024-01-11 14:43:55: Currently 0 devices are joined:
+info  2024-01-11 14:43:55: Zigbee: disabling joining new devices.
+info  2024-01-11 14:43:55: Connecting to MQTT server at mqtt://172.17.0.1
+info  2024-01-11 14:43:55: Connected to MQTT server
+info  2024-01-11 14:43:55: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-01-11 14:43:56: Started frontend on port 8080
+info  2024-01-11 14:43:56: Zigbee2MQTT started!
+info  2024-01-11 15:01:31: Zigbee: allowing new devices to join.
+info  2024-01-11 15:01:31: Successfully changed options
+info  2024-01-11 15:01:31: MQTT publish: topic 'zigbee2mqtt/bridge/response/options', payload '{"data":{"restart_required":false},"status":"ok","transaction":"9tasy-1"}'
+info  2024-01-11 15:11:56: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-01-11 15:11:56: Disconnecting from MQTT server
+info  2024-01-11 15:11:56: Stopping zigbee-herdsman...
+info  2024-01-11 15:11:57: Stopped zigbee-herdsman
+info  2024-01-11 15:11:57: Stopped Zigbee2MQTT

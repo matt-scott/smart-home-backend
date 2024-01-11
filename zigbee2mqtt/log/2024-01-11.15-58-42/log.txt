@@ -1,0 +1,43 @@
+info  2024-01-11 15:58:43: Logging to console and directory: '/app/data/log/2024-01-11.15-58-42' filename: log.txt
+info  2024-01-11 15:58:43: Starting Zigbee2MQTT version 1.35.1 (commit #9eaaa0f)
+info  2024-01-11 15:58:43: Starting zigbee-herdsman (0.30.0)
+info  2024-01-11 15:58:47: zigbee-herdsman started (resumed)
+info  2024-01-11 15:58:47: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+info  2024-01-11 15:58:47: Currently 2 devices are joined:
+info  2024-01-11 15:58:47: kitchen/temperature (0x00158d0009f5625a): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-11 15:58:47: bedrooom/temperature (0x00158d00087b562c): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+warn  2024-01-11 15:58:47: `permit_join` set to  `true` in configuration.yaml.
+warn  2024-01-11 15:58:47: Allowing new devices to join.
+warn  2024-01-11 15:58:47: Set `permit_join` to `false` once you joined all devices.
+info  2024-01-11 15:58:47: Zigbee: allowing new devices to join.
+info  2024-01-11 15:58:48: Connecting to MQTT server at mqtt://172.17.0.1
+info  2024-01-11 15:58:48: Connected to MQTT server
+info  2024-01-11 15:58:48: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-01-11 15:58:48: Started frontend on port 8080
+info  2024-01-11 15:58:48: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":34.56,"linkquality":248,"pressure":991.1,"temperature":21.34}'
+info  2024-01-11 15:58:48: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.32,"linkquality":196,"pressure":990.8,"temperature":19.35}'
+info  2024-01-11 15:58:48: Zigbee2MQTT started!
+info  2024-01-11 15:59:12: Device '0x00158d00087b5647' joined
+info  2024-01-11 15:59:12: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x00158d00087b5647","ieee_address":"0x00158d00087b5647"},"type":"device_joined"}'
+info  2024-01-11 15:59:12: Starting interview of '0x00158d00087b5647'
+info  2024-01-11 15:59:12: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x00158d00087b5647","ieee_address":"0x00158d00087b5647","status":"started"},"type":"device_interview"}'
+info  2024-01-11 15:59:22: Successfully interviewed '0x00158d00087b5647', device has successfully been paired
+info  2024-01-11 15:59:22: Device '0x00158d00087b5647' is supported, identified as: Xiaomi Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)
+info  2024-01-11 15:59:22: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"definition":{"description":"Aqara temperature, humidity and pressure sensor","exposes":[{"access":1,"description":"Remaining battery in %, can take up to 24 hours before reported.","label":"Battery","name":"battery","property":"battery","type":"numeric","unit":"%","value_max":100,"value_min":0},{"access":1,"description":"Measured temperature value","label":"Temperature","name":"temperature","property":"temperature","type":"numeric","unit":"°C"},{"access":1,"description":"Measured relative humidity","label":"Humidity","name":"humidity","property":"humidity","type":"numeric","unit":"%"},{"access":1,"description":"The measured atmospheric pressure","label":"Pressure","name":"pressure","property":"pressure","type":"numeric","unit":"hPa"},{"access":1,"description":"Voltage of the battery in millivolts","label":"Voltage","name":"voltage","property":"voltage","type":"numeric","unit":"mV"},{"access":1,"description":"Link quality (signal strength)","label":"Linkquality","name":"linkquality","property":"linkquality","type":"numeric","unit":"lqi","value_max":255,"value_min":0}],"model":"WSDCGQ11LM","options":[{"access":2,"description":"Calibrates the temperature value (absolute offset), takes into effect on next report of device.","label":"Temperature calibration","name":"temperature_calibration","property":"temperature_calibration","type":"numeric"},{"access":2,"description":"Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it.","label":"Temperature precision","name":"temperature_precision","property":"temperature_precision","type":"numeric","value_max":3,"value_min":0},{"access":2,"description":"Calibrates the humidity value (absolute offset), takes into effect on next report of device.","label":"Humidity calibration","name":"humidity_calibration","property":"humidity_calibration","type":"numeric"},{"access":2,"description":"Number of digits after decimal point for humidity, takes into effect on next report of device. This option can only decrease the precision, not increase it.","label":"Humidity precision","name":"humidity_precision","property":"humidity_precision","type":"numeric","value_max":3,"value_min":0},{"access":2,"description":"Calibrates the pressure value (absolute offset), takes into effect on next report of device.","label":"Pressure calibration","name":"pressure_calibration","property":"pressure_calibration","type":"numeric"},{"access":2,"description":"Number of digits after decimal point for pressure, takes into effect on next report of device. This option can only decrease the precision, not increase it.","label":"Pressure precision","name":"pressure_precision","property":"pressure_precision","type":"numeric","value_max":3,"value_min":0}],"supports_ota":false,"vendor":"Xiaomi"},"friendly_name":"0x00158d00087b5647","ieee_address":"0x00158d00087b5647","status":"successful","supported":true},"type":"device_interview"}'
+info  2024-01-11 15:59:22: Configuring '0x00158d00087b5647'
+info  2024-01-11 15:59:22: Successfully configured '0x00158d00087b5647'
+info  2024-01-11 15:59:37: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":34.57,"linkquality":255,"power_outage_count":8,"pressure":990.8,"temperature":21.8,"voltage":3055}'
+info  2024-01-11 15:59:40: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":34.57,"linkquality":255,"power_outage_count":8,"pressure":990.8,"temperature":21.81,"voltage":3055}'
+info  2024-01-11 15:59:40: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":34.07,"linkquality":255,"power_outage_count":8,"pressure":990.8,"temperature":21.81,"voltage":3055}'
+info  2024-01-11 15:59:40: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":34.07,"linkquality":255,"power_outage_count":8,"pressure":990.8,"temperature":21.81,"voltage":3055}'
+info  2024-01-11 15:59:43: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":34.07,"linkquality":255,"power_outage_count":8,"pressure":990.8,"temperature":21.78,"voltage":3055}'
+info  2024-01-11 15:59:43: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":33.72,"linkquality":255,"power_outage_count":8,"pressure":990.8,"temperature":21.78,"voltage":3055}'
+info  2024-01-11 15:59:44: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":33.72,"linkquality":255,"power_outage_count":8,"pressure":990.7,"temperature":21.78,"voltage":3055}'
+info  2024-01-11 15:59:47: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":33.72,"linkquality":255,"power_outage_count":8,"pressure":990.7,"temperature":21.78,"voltage":3055}'
+info  2024-01-11 15:59:47: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":33.54,"linkquality":255,"power_outage_count":8,"pressure":990.7,"temperature":21.78,"voltage":3055}'
+info  2024-01-11 15:59:47: MQTT publish: topic 'zigbee2mqtt/0x00158d00087b5647', payload '{"battery":100,"humidity":33.54,"linkquality":255,"power_outage_count":8,"pressure":990.7,"temperature":21.78,"voltage":3055}'
+info  2024-01-11 15:59:52: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-01-11 15:59:52: Disconnecting from MQTT server
+info  2024-01-11 15:59:52: Stopping zigbee-herdsman...
+info  2024-01-11 15:59:52: Stopped zigbee-herdsman
+info  2024-01-11 15:59:52: Stopped Zigbee2MQTT

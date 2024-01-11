@@ -1,0 +1,4 @@
+info  2024-01-11 12:49:04: Logging to console and directory: '/app/data/log/2024-01-11.12-49-04' filename: log.txt
+info  2024-01-11 12:49:04: Starting Zigbee2MQTT version 1.35.1 (commit #9eaaa0f)
+info  2024-01-11 12:49:04: Starting zigbee-herdsman (0.30.0)
+error 2024-01-11 12:49:06: Not connected to MQTT server!

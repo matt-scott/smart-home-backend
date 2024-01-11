@@ -1,0 +1,84 @@
+info  2024-01-11 15:48:17: Logging to console and directory: '/app/data/log/2024-01-11.15-48-17' filename: log.txt
+info  2024-01-11 15:48:17: Starting Zigbee2MQTT version 1.35.1 (commit #9eaaa0f)
+info  2024-01-11 15:48:17: Starting zigbee-herdsman (0.30.0)
+info  2024-01-11 15:48:22: zigbee-herdsman started (resumed)
+info  2024-01-11 15:48:22: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+info  2024-01-11 15:48:22: Currently 2 devices are joined:
+info  2024-01-11 15:48:22: kitchen/temperature (0x00158d0009f5625a): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-11 15:48:22: bedrooom/temperature (0x00158d00087b562c): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+warn  2024-01-11 15:48:22: `permit_join` set to  `true` in configuration.yaml.
+warn  2024-01-11 15:48:22: Allowing new devices to join.
+warn  2024-01-11 15:48:22: Set `permit_join` to `false` once you joined all devices.
+info  2024-01-11 15:48:22: Zigbee: allowing new devices to join.
+info  2024-01-11 15:48:22: Connecting to MQTT server at mqtt://172.17.0.1
+info  2024-01-11 15:48:23: Connected to MQTT server
+info  2024-01-11 15:48:23: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-01-11 15:48:23: Started frontend on port 8080
+info  2024-01-11 15:48:23: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":33.87,"pressure":991,"temperature":20.46}'
+info  2024-01-11 15:48:23: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":36.03,"pressure":990.9,"temperature":18.8}'
+info  2024-01-11 15:48:23: Zigbee2MQTT started!
+info  2024-01-11 15:49:37: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":33.87,"linkquality":204,"pressure":991,"temperature":20.5}'
+info  2024-01-11 15:49:37: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":43.64,"linkquality":204,"pressure":991,"temperature":20.5}'
+info  2024-01-11 15:49:37: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":43.64,"linkquality":204,"pressure":990.9,"temperature":20.5}'
+info  2024-01-11 15:49:40: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":43.64,"linkquality":204,"pressure":990.9,"temperature":20.74}'
+info  2024-01-11 15:49:40: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":65.15,"linkquality":212,"pressure":990.9,"temperature":20.74}'
+info  2024-01-11 15:49:40: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":65.15,"linkquality":216,"pressure":991,"temperature":20.74}'
+info  2024-01-11 15:49:43: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":65.15,"linkquality":236,"pressure":991,"temperature":20.6}'
+info  2024-01-11 15:49:43: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":74.47,"linkquality":236,"pressure":991,"temperature":20.6}'
+info  2024-01-11 15:49:43: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":74.47,"linkquality":236,"pressure":990.9,"temperature":20.6}'
+info  2024-01-11 15:49:52: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":74.47,"linkquality":248,"pressure":990.9,"temperature":20.49}'
+info  2024-01-11 15:49:52: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":63.43,"linkquality":248,"pressure":990.9,"temperature":20.49}'
+info  2024-01-11 15:49:52: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":63.43,"linkquality":248,"pressure":990.9,"temperature":20.49}'
+info  2024-01-11 15:49:56: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":63.43,"linkquality":248,"pressure":990.9,"temperature":20.57}'
+info  2024-01-11 15:49:56: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":55.25,"linkquality":248,"pressure":990.9,"temperature":20.57}'
+info  2024-01-11 15:49:56: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":55.25,"linkquality":248,"pressure":991,"temperature":20.57}'
+info  2024-01-11 15:49:59: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":55.25,"linkquality":244,"pressure":991,"temperature":20.63}'
+info  2024-01-11 15:49:59: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":48.6,"linkquality":248,"pressure":991,"temperature":20.63}'
+info  2024-01-11 15:49:59: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":48.6,"linkquality":248,"pressure":990.9,"temperature":20.63}'
+info  2024-01-11 15:50:05: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":48.6,"linkquality":244,"pressure":990.9,"temperature":20.65}'
+info  2024-01-11 15:50:05: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":42.22,"linkquality":248,"pressure":990.9,"temperature":20.65}'
+info  2024-01-11 15:50:05: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":42.22,"linkquality":248,"pressure":990.9,"temperature":20.65}'
+info  2024-01-11 15:50:36: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":42.22,"linkquality":240,"pressure":990.9,"temperature":20.82}'
+info  2024-01-11 15:50:36: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":35.95,"linkquality":240,"pressure":990.9,"temperature":20.82}'
+info  2024-01-11 15:50:36: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":35.95,"linkquality":240,"pressure":991,"temperature":20.82}'
+info  2024-01-11 15:51:06: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":36.03,"linkquality":128,"pressure":990.9,"temperature":19.3}'
+info  2024-01-11 15:51:06: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.12,"linkquality":132,"pressure":990.9,"temperature":19.3}'
+info  2024-01-11 15:51:06: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.12,"linkquality":132,"pressure":990.9,"temperature":19.3}'
+info  2024-01-11 15:51:12: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.12,"linkquality":144,"pressure":990.9,"temperature":19.4}'
+info  2024-01-11 15:51:12: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":45.45,"linkquality":144,"pressure":990.9,"temperature":19.4}'
+info  2024-01-11 15:51:12: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":45.45,"linkquality":144,"pressure":990.9,"temperature":19.4}'
+info  2024-01-11 15:51:27: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":45.45,"linkquality":220,"pressure":990.9,"temperature":19.5}'
+info  2024-01-11 15:51:27: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.04,"linkquality":220,"pressure":990.9,"temperature":19.5}'
+info  2024-01-11 15:51:28: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.04,"linkquality":216,"pressure":990.8,"temperature":19.5}'
+info  2024-01-11 15:51:37: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.04,"linkquality":204,"pressure":990.8,"temperature":19.53}'
+info  2024-01-11 15:51:37: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":44.15,"linkquality":204,"pressure":990.8,"temperature":19.53}'
+info  2024-01-11 15:51:37: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":44.15,"linkquality":200,"pressure":991.1,"temperature":19.53}'
+info  2024-01-11 15:51:40: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":44.15,"linkquality":172,"pressure":991.1,"temperature":19.45}'
+info  2024-01-11 15:51:40: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":46.64,"linkquality":172,"pressure":991.1,"temperature":19.45}'
+info  2024-01-11 15:51:40: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":46.64,"linkquality":172,"pressure":990.8,"temperature":19.45}'
+info  2024-01-11 15:51:51: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":35.95,"linkquality":248,"pressure":991,"temperature":21.34}'
+info  2024-01-11 15:51:51: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":34.56,"linkquality":248,"pressure":991,"temperature":21.34}'
+info  2024-01-11 15:51:51: MQTT publish: topic 'zigbee2mqtt/kitchen/temperature', payload '{"humidity":34.56,"linkquality":248,"pressure":991.1,"temperature":21.34}'
+info  2024-01-11 15:51:58: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":46.64,"linkquality":164,"pressure":990.8,"temperature":19.55}'
+info  2024-01-11 15:51:58: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":40.56,"linkquality":168,"pressure":990.8,"temperature":19.55}'
+info  2024-01-11 15:51:58: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":40.56,"linkquality":168,"pressure":990.8,"temperature":19.55}'
+info  2024-01-11 15:54:23: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":40.56,"linkquality":84,"pressure":990.8,"temperature":19.25}'
+info  2024-01-11 15:54:23: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":40.01,"linkquality":68,"pressure":990.8,"temperature":19.25}'
+info  2024-01-11 15:54:23: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":40.01,"linkquality":68,"pressure":991,"temperature":19.25}'
+info  2024-01-11 15:54:39: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":40.01,"linkquality":176,"pressure":991,"temperature":19.35}'
+info  2024-01-11 15:54:39: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":46.85,"linkquality":172,"pressure":991,"temperature":19.35}'
+info  2024-01-11 15:54:39: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":46.85,"linkquality":172,"pressure":990.9,"temperature":19.35}'
+info  2024-01-11 15:54:45: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":46.85,"linkquality":100,"pressure":990.9,"temperature":19.28}'
+info  2024-01-11 15:54:45: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":44.89,"linkquality":100,"pressure":990.9,"temperature":19.28}'
+info  2024-01-11 15:54:45: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":44.89,"linkquality":104,"pressure":991.2,"temperature":19.28}'
+info  2024-01-11 15:54:48: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":44.89,"linkquality":144,"pressure":991.2,"temperature":19.33}'
+info  2024-01-11 15:54:48: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":45.88,"linkquality":144,"pressure":991.2,"temperature":19.33}'
+info  2024-01-11 15:54:48: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":45.88,"linkquality":144,"pressure":990.8,"temperature":19.33}'
+info  2024-01-11 15:55:04: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":45.88,"linkquality":196,"pressure":990.8,"temperature":19.35}'
+info  2024-01-11 15:55:04: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.32,"linkquality":196,"pressure":990.8,"temperature":19.35}'
+info  2024-01-11 15:55:04: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"humidity":39.32,"linkquality":196,"pressure":990.8,"temperature":19.35}'
+info  2024-01-11 15:58:13: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-01-11 15:58:13: Disconnecting from MQTT server
+info  2024-01-11 15:58:14: Stopping zigbee-herdsman...
+info  2024-01-11 15:58:14: Stopped zigbee-herdsman
+info  2024-01-11 15:58:14: Stopped Zigbee2MQTT
