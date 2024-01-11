@@ -1,7 +1,7 @@
 const mqtt = require('mqtt');
 
 // const host = ('localhost');
-const host = (172.17.0.1);
+const host = ('172.17.0.1');
 // Default unencrypted MQTT port. Mosquitto connects to this automatically when run.
 const port = ('1883');
 const clientId = (`mqttjs_handler${Math.random().toString(16).slice(3)}`);
