@@ -19,6 +19,11 @@ services:
     devices:
       # Make sure this matched your adapter location
       - /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20231121171832-if00:/dev/ttyACM0
+  backend:
+    build: .
+    image: mattscott251/backend
+    depends_on:
+      - mosquitto
   mosquitto:
     image: eclipse-mosquitto:2.0.18
     container_name: mosquitto
