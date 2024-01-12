@@ -22,6 +22,7 @@ services:
   backend:
     build: .
     image: mattscott251/backend
+    container_name: backend
     depends_on:
       - mosquitto
   mosquitto:
