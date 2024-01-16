@@ -1,8 +1,8 @@
 {
     "0x00158d0009f5625a": {
-        "temperature": 21.38,
-        "humidity": 32.84,
-        "pressure": 966.8,
+        "temperature": 25.48,
+        "humidity": 17.41,
+        "pressure": 995.8,
         "linkquality": 255,
         "voltage": 3045,
         "battery": 100,
