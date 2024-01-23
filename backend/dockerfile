@@ -1,0 +1,18 @@
+FROM node:21.5.0-alpine3.18
+
+# Make and change to backend directory
+RUN mkdir -p /usr/src/backend
+WORKDIR /usr/src/backend
+
+# Copy package.json and package-lock.json
+COPY package* ./
+# Runs npm install to install packages
+# Clean unnecessary files after, to keep image small
+RUN npm install &&\
+    npm cache clean --force
+
+# Copy files over
+COPY app.js .sequelizerc ./db ./config ./
+
+EXPOSE 1883
+# CMD ["node", "app.js"]

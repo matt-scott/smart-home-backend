@@ -21,9 +21,9 @@
         "voltage": 3075,
         "battery": 100,
         "power_outage_count": 13,
-        "temperature": 20.91,
-        "humidity": 31.66,
-        "pressure": 966.5,
+        "temperature": 23.2,
+        "humidity": 25.19,
+        "pressure": 1002.5,
         "linkquality": 255
     }
 }

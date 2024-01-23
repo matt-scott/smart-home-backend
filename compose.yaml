@@ -1,6 +1,29 @@
 version: "3.8"
 
 services:
+  timescaledb:
+    image: timescale/timescaledb:2.13.1-pg16
+    container_name: timescaledb
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: matts
+      POSTGRES_PASSWORD: chilicheesecake
+      POSTGRES_DATABASE: sensor_data_db
+    networks:
+      - backend-network
+    volumes:
+      - ./backend/db/data:/var/lib/postgresql/data
+  mosquitto:
+    image: eclipse-mosquitto:2.0.18
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      # Maps the directory containing Mosquitto configuration files to a location you can edit
+      - ./mosquitto:/mosquitto
   zigbee2mqtt:
     # privileged: true
     container_name: zigbee2mqtt
@@ -20,28 +43,16 @@ services:
       # Make sure this matched your adapter location
       - /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20231121171832-if00:/dev/ttyACM0
   database-handler:
-    build: .
-    image: mattscott251/backend
+    build: ./backend
+    image: mattscott251/database-handler
     container_name: database-handler
     depends_on:
-      - mosquitto
-  timescaledb:
-    image: timescale/timescaledb:2.13.1-pg16
-    restart: always
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_USER: matts
-      POSTGRES_PASSWORD: chilicheesecake
-      POSTGRES_DATABASE: sensor_data_db
-    volumes:
-      - /backend/db/data:/var/lib/postgresql/data
-  mosquitto:
-    image: eclipse-mosquitto:2.0.18
-    container_name: mosquitto
-    ports:
-      - "1883:1883"
-      - "9001:9001"
-    volumes:
-      # Maps the directory containing Mosquitto configuration files to a location you can edit
-      - ./mosquitto:/mosquitto
+      - timescaledb
+      - zigbee2mqtt
+    networks:
+      - backend-network
+    command: npx sequelize db:migrate && node app.js
+
+networks:
+  backend-network:
+    driver: bridge
