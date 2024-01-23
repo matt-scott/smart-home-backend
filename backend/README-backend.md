@@ -81,7 +81,7 @@ npx sequelize migration:generate --name add_hypertable
 **Check on need for production env password and such**
 
 Run migrations in db
-add depends on for db in compose
+
 
 ## To do
 

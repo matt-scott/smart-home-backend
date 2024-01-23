@@ -8,13 +8,19 @@ services:
     ports:
       - 5432:5432
     environment:
+      POSTGRES_DB: sensor_data_db
       POSTGRES_USER: matts
       POSTGRES_PASSWORD: chilicheesecake
-      POSTGRES_DATABASE: sensor_data_db
     networks:
       - backend-network
     volumes:
-      - ./backend/db/data:/var/lib/postgresql/data
+      - ./backend/db/data-test:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U matts -d sensor_data_db"]
+      # test: [ "CMD-SHELL", "pg_isready", "-q", "-d", "sensor_data_db", "-U", "matts" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
   mosquitto:
     image: eclipse-mosquitto:2.0.18
     container_name: mosquitto
@@ -47,8 +53,10 @@ services:
     image: mattscott251/database-handler
     container_name: database-handler
     depends_on:
-      - timescaledb
-      - zigbee2mqtt
+      timescaledb:
+        condition: service_healthy
+      zigbee2mqtt:
+        condition: service_started
     networks:
       - backend-network
     command: npx sequelize db:migrate && node app.js

@@ -35,6 +35,7 @@ sequelize.authenticate().then(() => {
 // Separate into its own file in future iteration
 
 // const host = ('localhost');
+// host to connect to to receive MQTT data
 const host = ('172.17.0.1');
 // Default unencrypted MQTT port. Mosquitto connects to this automatically when run.
 const port = ('1883');

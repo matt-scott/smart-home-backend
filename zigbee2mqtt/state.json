@@ -1,10 +1,10 @@
 {
     "0x00158d0009f5625a": {
-        "temperature": 25.48,
-        "humidity": 17.41,
-        "pressure": 995.8,
+        "temperature": 23.84,
+        "humidity": 22.89,
+        "pressure": 1003.3,
         "linkquality": 255,
-        "voltage": 3045,
+        "voltage": 3005,
         "battery": 100,
         "power_outage_count": 11
     },
@@ -21,9 +21,9 @@
         "voltage": 3075,
         "battery": 100,
         "power_outage_count": 13,
-        "temperature": 23.2,
-        "humidity": 25.19,
-        "pressure": 1002.5,
+        "temperature": 23.75,
+        "humidity": 25.63,
+        "pressure": 1002.6,
         "linkquality": 255
     }
 }

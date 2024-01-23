@@ -1,0 +1,28 @@
+info  2024-01-22 23:57:49: Logging to console and directory: '/app/data/log/2024-01-22.23-57-49' filename: log.txt
+info  2024-01-22 23:57:49: Starting Zigbee2MQTT version 1.35.1 (commit #9eaaa0f)
+info  2024-01-22 23:57:49: Starting zigbee-herdsman (0.30.0)
+info  2024-01-22 23:57:54: zigbee-herdsman started (resumed)
+info  2024-01-22 23:57:54: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+info  2024-01-22 23:57:54: Currently 3 devices are joined:
+info  2024-01-22 23:57:54: dining/temperature (0x00158d0009f5625a): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-22 23:57:54: bedrooom/temperature (0x00158d00087b562c): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-22 23:57:54: family/temperature (0x00158d00087b5647): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-22 23:57:54: Zigbee: disabling joining new devices.
+info  2024-01-22 23:57:54: Connecting to MQTT server at mqtt://172.17.0.1
+info  2024-01-22 23:57:55: Connected to MQTT server
+info  2024-01-22 23:57:55: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-01-22 23:57:55: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-01-22 23:57:55: Disconnecting from MQTT server
+info  2024-01-22 23:57:55: Stopping zigbee-herdsman...
+error 2024-01-22 23:57:55: Failed to call 'Availability' 'start' (Error: This extension cannot be restarted.
+    at Availability.start (/app/lib/extension/availability.ts:114:19)
+    at Controller.callExtensions (/app/lib/controller.ts:316:42)
+    at Controller.start (/app/lib/controller.ts:150:9)
+    at start (/app/index.js:107:5))
+info  2024-01-22 23:57:55: Started frontend on port 8080
+info  2024-01-22 23:57:55: MQTT publish: topic 'zigbee2mqtt/dining/temperature', payload '{"battery":100,"humidity":22.89,"linkquality":255,"power_outage_count":11,"pressure":1003.3,"temperature":23.84,"voltage":3005}'
+info  2024-01-22 23:57:55: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"battery":100,"humidity":34.9,"linkquality":196,"power_outage_count":8,"pressure":966.5,"temperature":19.66,"voltage":3095}'
+info  2024-01-22 23:57:55: MQTT publish: topic 'zigbee2mqtt/family/temperature', payload '{"battery":100,"humidity":23.12,"linkquality":255,"power_outage_count":13,"pressure":1003,"temperature":23.32,"voltage":3075}'
+info  2024-01-22 23:57:55: Zigbee2MQTT started!
+info  2024-01-22 23:57:56: Stopped zigbee-herdsman
+info  2024-01-22 23:57:56: Stopped Zigbee2MQTT

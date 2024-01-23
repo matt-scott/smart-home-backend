@@ -12,7 +12,10 @@ RUN npm install &&\
     npm cache clean --force
 
 # Copy files over
-COPY app.js .sequelizerc ./db ./config ./
+COPY app.js .sequelizerc ./
+COPY config/ ./config/
+COPY db/ ./db/
+
 
 EXPOSE 1883
 # CMD ["node", "app.js"]

@@ -1,0 +1,23 @@
+info  2024-01-23 00:54:39: Logging to console and directory: '/app/data/log/2024-01-23.00-54-38' filename: log.txt
+info  2024-01-23 00:54:39: Starting Zigbee2MQTT version 1.35.1 (commit #9eaaa0f)
+info  2024-01-23 00:54:39: Starting zigbee-herdsman (0.30.0)
+info  2024-01-23 00:54:44: zigbee-herdsman started (resumed)
+info  2024-01-23 00:54:44: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+info  2024-01-23 00:54:44: Currently 3 devices are joined:
+info  2024-01-23 00:54:44: dining/temperature (0x00158d0009f5625a): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-23 00:54:44: bedrooom/temperature (0x00158d00087b562c): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-23 00:54:44: family/temperature (0x00158d00087b5647): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+info  2024-01-23 00:54:44: Zigbee: disabling joining new devices.
+info  2024-01-23 00:54:44: Connecting to MQTT server at mqtt://172.17.0.1
+info  2024-01-23 00:54:45: Connected to MQTT server
+info  2024-01-23 00:54:45: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-01-23 00:54:45: Started frontend on port 8080
+info  2024-01-23 00:54:45: MQTT publish: topic 'zigbee2mqtt/dining/temperature', payload '{"battery":100,"humidity":22.89,"linkquality":255,"power_outage_count":11,"pressure":1003.3,"temperature":23.84,"voltage":3005}'
+info  2024-01-23 00:54:45: MQTT publish: topic 'zigbee2mqtt/bedrooom/temperature', payload '{"battery":100,"humidity":34.9,"linkquality":196,"power_outage_count":8,"pressure":966.5,"temperature":19.66,"voltage":3095}'
+info  2024-01-23 00:54:45: MQTT publish: topic 'zigbee2mqtt/family/temperature', payload '{"battery":100,"humidity":25.63,"linkquality":255,"power_outage_count":13,"pressure":1002.6,"temperature":23.75,"voltage":3075}'
+info  2024-01-23 00:54:45: Zigbee2MQTT started!
+info  2024-01-23 00:55:17: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-01-23 00:55:17: Disconnecting from MQTT server
+info  2024-01-23 00:55:18: Stopping zigbee-herdsman...
+info  2024-01-23 00:55:18: Stopped zigbee-herdsman
+info  2024-01-23 00:55:18: Stopped Zigbee2MQTT
